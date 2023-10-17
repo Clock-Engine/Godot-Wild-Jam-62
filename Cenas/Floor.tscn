@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://c4hdxtmb7vb16"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_2q5c2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_efbrb"]
+size = Vector2(138.9, 2.2)
+
+[node name="Floor" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+physics_material_override = SubResource("PhysicsMaterial_2q5c2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-1.50002, 3)
+scale = Vector2(10, 10)
+shape = SubResource("RectangleShape2D_efbrb")
+
+[node name="Panel" type="Panel" parent="."]
+offset_left = -696.0
+offset_top = -8.0
+offset_right = 694.0
+offset_bottom = 32.0

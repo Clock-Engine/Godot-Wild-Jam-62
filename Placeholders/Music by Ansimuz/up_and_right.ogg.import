@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ceht6mqy154vm"
+path="res://.godot/imported/up_and_right.ogg-42ea98c839bcdc6d88600c9171990b3c.oggvorbisstr"
+
+[deps]
+
+source_file="res://Placeholders/Music by Ansimuz/up_and_right.ogg"
+dest_files=["res://.godot/imported/up_and_right.ogg-42ea98c839bcdc6d88600c9171990b3c.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

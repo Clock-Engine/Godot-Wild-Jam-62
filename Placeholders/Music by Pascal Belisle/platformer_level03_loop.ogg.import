@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://fmmptt0buhtf"
+path="res://.godot/imported/platformer_level03_loop.ogg-9120fcdecfeca1094f8996cf54347675.oggvorbisstr"
+
+[deps]
+
+source_file="res://Placeholders/Music by Pascal Belisle/platformer_level03_loop.ogg"
+dest_files=["res://.godot/imported/platformer_level03_loop.ogg-9120fcdecfeca1094f8996cf54347675.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
