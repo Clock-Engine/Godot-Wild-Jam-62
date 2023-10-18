@@ -10,3 +10,7 @@ position = Vector2(341, 434)
 
 [node name="Floor" parent="." instance=ExtResource("2_gnmbl")]
 position = Vector2(643, 548)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(402, 414)
+zoom = Vector2(1.5, 1.5)

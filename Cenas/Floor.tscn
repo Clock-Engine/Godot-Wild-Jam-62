@@ -20,3 +20,27 @@ offset_left = -696.0
 offset_top = -8.0
 offset_right = 694.0
 offset_bottom = 32.0
+
+[node name="Panel2" type="Panel" parent="."]
+offset_left = -517.0
+offset_top = -66.0
+offset_right = -484.0
+offset_bottom = -4.0
+
+[node name="Panel3" type="Panel" parent="."]
+offset_left = -84.0
+offset_top = -66.0
+offset_right = -51.0
+offset_bottom = -4.0
+
+[node name="Panel4" type="Panel" parent="."]
+offset_left = 302.0
+offset_top = -66.0
+offset_right = 335.0
+offset_bottom = -4.0
+
+[node name="Panel5" type="Panel" parent="."]
+offset_left = 628.0
+offset_top = -66.0
+offset_right = 661.0
+offset_bottom = -4.0
