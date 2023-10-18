@@ -6,17 +6,17 @@
 script = ExtResource("1_8soqu")
 
 [node name="Play" type="Button" parent="."]
-offset_left = 615.0
-offset_top = 194.0
-offset_right = 1325.0
-offset_bottom = 470.0
+offset_left = 375.0
+offset_top = 122.0
+offset_right = 781.0
+offset_bottom = 250.0
 text = "Play"
 
 [node name="Quit" type="Button" parent="."]
-offset_left = 615.0
-offset_top = 592.0
-offset_right = 1325.0
-offset_bottom = 868.0
+offset_left = 367.0
+offset_top = 336.0
+offset_right = 801.0
+offset_bottom = 484.0
 text = "Quit"
 
 [connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
