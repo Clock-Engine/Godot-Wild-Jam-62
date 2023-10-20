@@ -1,26 +1,75 @@
-[gd_scene load_steps=26 format=3 uid="uid://4if7hi5q7xr0"]
+[gd_scene load_steps=38 format=3 uid="uid://4if7hi5q7xr0"]
 
 [ext_resource type="Script" path="res://Scripts/Player.gd" id="1_o52jk"]
+[ext_resource type="Texture2D" uid="uid://y5iejjo5858p" path="res://Sprites/Player/Attack1/sprite_00.png" id="2_0eyjd"]
 [ext_resource type="Texture2D" uid="uid://bo6t5c3aw8rgs" path="res://Sprites/Player/Dash/sprite_00.png" id="2_v5i1v"]
 [ext_resource type="Texture2D" uid="uid://o4et8lm1piia" path="res://Sprites/Player/Idle/sprite_0.png" id="2_w5hfp"]
 [ext_resource type="Texture2D" uid="uid://t3vs87yd0jv6" path="res://Sprites/Player/Dash/sprite_01.png" id="3_fb2ja"]
+[ext_resource type="Texture2D" uid="uid://dhra3du2vyqob" path="res://Sprites/Player/Attack1/sprite_01.png" id="3_hacyx"]
 [ext_resource type="Texture2D" uid="uid://iuiqoc656ijj" path="res://Sprites/Player/Idle/sprite_1.png" id="3_jkpwt"]
 [ext_resource type="Texture2D" uid="uid://8bsd7ejatasq" path="res://Sprites/Player/Run/sprite_0.png" id="4_fgi24"]
 [ext_resource type="Texture2D" uid="uid://x33ntk5q70b" path="res://Sprites/Player/Dash/sprite_02.png" id="4_jiqkj"]
+[ext_resource type="Texture2D" uid="uid://bjiu1uipc3ft3" path="res://Sprites/Player/Attack1/sprite_02.png" id="4_ntpbb"]
+[ext_resource type="Texture2D" uid="uid://c1ye6211c7jth" path="res://Sprites/Player/Attack1/sprite_03.png" id="5_akghm"]
 [ext_resource type="Texture2D" uid="uid://tif4d8losff1" path="res://Sprites/Player/Dash/sprite_03.png" id="5_i4dio"]
 [ext_resource type="Texture2D" uid="uid://c11bk77jk2ouc" path="res://Sprites/Player/Run/sprite_1.png" id="5_ika8b"]
 [ext_resource type="Texture2D" uid="uid://s2cvavt7jsx1" path="res://Sprites/Player/Walk/sprite_0.png" id="6_34d1v"]
+[ext_resource type="Texture2D" uid="uid://6paa11g037ji" path="res://Sprites/Player/Attack1/sprite_04.png" id="6_cro42"]
 [ext_resource type="Texture2D" uid="uid://bna5tfk0vjeee" path="res://Sprites/Player/Dash/sprite_04.png" id="6_h6rfs"]
 [ext_resource type="Texture2D" uid="uid://c1uobycwe0lul" path="res://Sprites/Player/Walk/sprite_1.png" id="7_3sy57"]
+[ext_resource type="Texture2D" uid="uid://crxpaerrvqsc4" path="res://Sprites/Player/Attack1/sprite_05.png" id="7_24fb8"]
 [ext_resource type="Texture2D" uid="uid://bwkve7mit0whg" path="res://Sprites/Player/Dash/sprite_05.png" id="7_yyiyg"]
 [ext_resource type="Texture2D" uid="uid://bvtuoanhup8pa" path="res://Sprites/Player/Dash/sprite_06.png" id="8_e7te3"]
+[ext_resource type="Texture2D" uid="uid://bt6b08xhfn52g" path="res://Sprites/Player/Attack1/sprite_06.png" id="8_t23yf"]
 [ext_resource type="Texture2D" uid="uid://c6swwp1f0iv2m" path="res://Sprites/Player/Dash/sprite_07.png" id="9_6enqb"]
+[ext_resource type="Texture2D" uid="uid://ctv62ghk8ck1n" path="res://Sprites/Player/Attack1/sprite_07.png" id="9_isfei"]
 [ext_resource type="Texture2D" uid="uid://221ixx3p5c3b" path="res://Sprites/Player/Dash/sprite_08.png" id="10_1d8wq"]
+[ext_resource type="Texture2D" uid="uid://b7exhrewf7dij" path="res://Sprites/Player/Attack1/sprite_08.png" id="10_7miyr"]
 [ext_resource type="Texture2D" uid="uid://b2upm3twspe58" path="res://Sprites/Player/Dash/sprite_09.png" id="11_l8ews"]
+[ext_resource type="Texture2D" uid="uid://ds3htn45xam0o" path="res://Sprites/Player/Attack1/sprite_09.png" id="11_rkucy"]
+[ext_resource type="Texture2D" uid="uid://bpx81ar8gevum" path="res://Sprites/Player/Attack1/sprite_10.png" id="12_da6fi"]
 [ext_resource type="Texture2D" uid="uid://lurc467erxgl" path="res://Sprites/Player/Dash/sprite_10.png" id="12_raubt"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ksswi"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_0eyjd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_hacyx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ntpbb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_akghm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_cro42")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_24fb8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_t23yf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_isfei")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_7miyr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_rkucy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_da6fi")
+}],
+"loop": true,
+"name": &"Attack1",
+"speed": 18.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("2_v5i1v")
@@ -97,6 +146,34 @@ animations = [{
 radius = 8.0
 height = 20.0
 
+[sub_resource type="Animation" id="Animation_gkomb"]
+resource_name = "Dash"
+length = 1.10001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"Dash"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+}
+
 [sub_resource type="Animation" id="Animation_7hpym"]
 resource_name = "Idle"
 loop_mode = 1
@@ -169,9 +246,9 @@ tracks/1/keys = {
 "values": [&"Run"]
 }
 
-[sub_resource type="Animation" id="Animation_gkomb"]
-resource_name = "Dash"
-length = 1.10001
+[sub_resource type="Animation" id="Animation_vpv2w"]
+resource_name = "Attack1"
+length = 1.1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -182,7 +259,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [&"Dash"]
+"values": [&"Attack1"]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -199,6 +276,7 @@ tracks/1/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ov1jm"]
 _data = {
+"Attack1": SubResource("Animation_vpv2w"),
 "Dash": SubResource("Animation_gkomb"),
 "Idle": SubResource("Animation_7hpym"),
 "RESET": SubResource("Animation_5s07l"),
@@ -210,7 +288,7 @@ script = ExtResource("1_o52jk")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_ksswi")
-animation = &"Dash"
+animation = &"Run"
 frame = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -219,6 +297,7 @@ shape = SubResource("CapsuleShape2D_li81l")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 autoplay = "Idle"
+speed_scale = 2.0
 libraries = {
 "": SubResource("AnimationLibrary_ov1jm")
 }

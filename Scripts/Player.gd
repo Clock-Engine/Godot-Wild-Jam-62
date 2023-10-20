@@ -25,17 +25,29 @@ func _physics_process(delta):
 		get_node("AnimatedSprite2D").flip_h = false
 	if direction && doingAction == false:
 		if velocity.y == 0:
+			anim.set_speed_scale(1)
 			anim.play("Run")
 		velocity.x = direction * SPEED
 	else:
 		if velocity.y == 0 && doingAction == false:
+			anim.set_speed_scale(1)
 			anim.play("Idle")
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		
 	if Input.is_action_just_pressed("dash"):
 		doingAction = true
+		anim.set_speed_scale(3)
 		anim.play("Dash")
-		velocity.x = move_toward(1000, 0, 10) #################
+		if doingAction == true:
+			velocity.x = direction * SPEED
+			print("OK")
+		get_tree().create_timer(1)
+		
+	if Input.is_action_just_pressed("attack"):
+		doingAction = true
+		anim.set_speed_scale(3)
+		anim.play("Attack1")
+		get_tree().create_timer(1)
 		
 	move_and_slide()
 
